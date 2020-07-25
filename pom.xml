@@ -9,15 +9,15 @@
 
 	<groupId>dev.prathamesh</groupId>
 	<artifactId>spring-multi-module</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring Multi Module</name>
 	<description>Multi Module Project</description>
 
 	<properties>
 		<java.version>11</java.version>
-		<data.module.version>0.0.1</data.module.version>
-		<service.module.version>0.0.1</service.module.version>
+		<data.module.version>0.0.2-SNAPSHOT</data.module.version>
+		<service.module.version>0.0.2-SNAPSHOT</service.module.version>
 	</properties>
 
 	<modules>
@@ -64,7 +64,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/devprathamesh/spring-multi-module.git</developerConnection>
-	  <tag>spring-multi-module-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 </project>
