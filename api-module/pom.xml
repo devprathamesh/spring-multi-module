@@ -11,6 +11,10 @@
 	<artifactId>api-module</artifactId>
 	<name>API Module</name>
 	<description>API Module Projct</description>
+	<properties>
+		<java.version>11</java.version>
+		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -43,14 +47,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>11</source>
-					<target>11</target>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
