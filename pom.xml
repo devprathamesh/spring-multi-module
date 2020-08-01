@@ -1,81 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.2.RELEASE</version>
-	</parent>
-
-	<groupId>dev.prathamesh</groupId>
-	<artifactId>spring-multi-module</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>Spring Multi Module</name>
-	<description>Multi Module Project</description>
-
-	<properties>
-		<java.version>11</java.version>
-		<data.module.version>0.0.2-SNAPSHOT</data.module.version>
-		<service.module.version>0.0.2-SNAPSHOT</service.module.version>
-	</properties>
-
-	<modules>
-		<module>data-module</module>
-		<module>service-module</module>
-		<module>api-module</module>
-	</modules>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>dev.prathamesh</groupId>
-				<artifactId>data-module</artifactId>
-				<version>${data.module.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>dev.prathamesh</groupId>
-				<artifactId>service-module</artifactId>
-				<version>${service.module.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<source>1.11</source>
-					<target>1.11</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<configuration>
-					<goals>install</goals>
-					<checkModificationExcludes>
-						<checkModificationExclude>pom.xml</checkModificationExclude>
-						<checkModificationExclude>**</checkModificationExclude>
-					</checkModificationExcludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
-	<scm>
-		<developerConnection>scm:git:https://github.com/devprathamesh/spring-multi-module.git</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
-
-</project>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		<modelVersion>4.0.0</modelVersion>
+		<parent>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>2.3.2.RELEASE</version>
+		</parent>
+	
+		<groupId>dev.prathamesh</groupId>
+		<artifactId>spring-multi-module</artifactId>
+		<version>0.0.2-SNAPSHOT</version>
+		<packaging>pom</packaging>
+		<name>Spring Multi Module</name>
+		<description>Multi Module Project</description>
+	
+		<properties>
+			<java.version>11</java.version>
+			<data.module.version>0.0.2-SNAPSHOT</data.module.version>
+			<service.module.version>0.0.2-SNAPSHOT</service.module.version>
+		</properties>
+	
+		<modules>
+			<module>data-module</module>
+			<module>service-module</module>
+			<module>api-module</module>
+		</modules>
+	
+		<dependencyManagement>
+			<dependencies>
+				<dependency>
+					<groupId>dev.prathamesh</groupId>
+					<artifactId>data-module</artifactId>
+					<version>${data.module.version}</version>
+				</dependency>
+				<dependency>
+					<groupId>dev.prathamesh</groupId>
+					<artifactId>service-module</artifactId>
+					<version>${service.module.version}</version>
+				</dependency>
+			</dependencies>
+		</dependencyManagement>
+	
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<source>1.11</source>
+						<target>1.11</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+	
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<configuration>
+						<goals>install</goals>
+						<checkModificationExcludes>
+							<checkModificationExclude>pom.xml</checkModificationExclude>
+							<checkModificationExclude>**</checkModificationExclude>
+						</checkModificationExcludes>
+					</configuration>
+				</plugin>
+			</plugins>
+		</build>
+	
+		<scm>
+			<developerConnection>scm:git:https://github.com/devprathamesh/spring-multi-module.git</developerConnection>
+			<tag>HEAD</tag>
+		</scm>
+	
+	</project>
