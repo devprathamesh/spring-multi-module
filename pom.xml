@@ -20,6 +20,8 @@
 			<java.version>11</java.version>
 			<data.module.version>0.0.2-SNAPSHOT</data.module.version>
 			<service.module.version>0.0.2-SNAPSHOT</service.module.version>
+			<maven.compiler.source>${java.version}</maven.compiler.source>
+			<maven.compiler.target>${java.version}</maven.compiler.target>
 		</properties>
 	
 		<modules>
